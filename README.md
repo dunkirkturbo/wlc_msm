@@ -11,7 +11,7 @@ Our implementation based on cached Jacobian coordinates is evaluated on three di
 | CPU Cores    | 12                     | 15                     | 12                     |
 | CPU Freq.    | 2.50GHz                | 2.60GHz                | 2.10GHz                |
 | OS           | Ubuntu 20.04           | Ubuntu 20.04           | Ubuntu 20.04           |
-| CUDA Version | 11.3                   | 11.3                   | 11.8                   |
+| CUDA Version | **11.3**               | **11.3**               | **11.8**               |
 
 Our GPU Implemetation of MSM relies on [`CUB`](https://nvlabs.github.io/cub/), which provides state-of-the-art, reusable software components for every layer of the CUDA programming model. By default, CUB is included in the CUDA Toolkit.
 
@@ -22,6 +22,12 @@ Install the Rust toolchain by:
 ```shell
 sudo curl https://sh.rustup.rs -sSf | sh
 source ~/.cargo/env
+```
+
+Our rust version is:
+
+```shell
+rustc 1.73.0 (cc66ad468 2023-10-03)
 ```
 
 ### Optional: Build and run cuZK that we compare with
